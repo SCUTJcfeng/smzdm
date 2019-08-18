@@ -8,8 +8,8 @@ def keyword_analysis(data, maps):
     for sku_data in data['data']['rows']:
         article_url = sku_data['article_url']
         article_title = sku_data['article_title']
-        article_mall = sku_data['article_mall']
-        article_price = sku_data['article_price']
+        article_mall = sku_data.get('article_mall')
+        article_price = sku_data.get('article_price')
         publish_date_lt = sku_data['publish_date_lt']
         print('---', article_title, article_url, article_mall, article_price, publish_date_lt)
         if not is_time_valid(publish_date_lt):

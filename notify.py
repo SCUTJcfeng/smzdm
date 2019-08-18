@@ -1,6 +1,6 @@
 
 import requests
-from config import FT_QQ_KEY
+from secret import FT_QQ_KEY
 
 
 msg_list = []
