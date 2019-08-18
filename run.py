@@ -10,7 +10,7 @@ def general_event_handler(event):
 
 
 if __name__ == "__main__":
-    engine = EventEngineThreadTimer(10)
+    engine = EventEngineThreadTimer(60)
     engine.registerGeneralHandler(general_event_handler)
     engine.start()
     input()
