@@ -1,7 +1,7 @@
 
 
 import datetime
-from notify import notify_wx
+from utils.notify import notify_wx
 
 
 def keyword_analysis(data, maps):
