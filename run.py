@@ -1,5 +1,5 @@
 
-from handler import handler_keyword
+from handler import handler_keyword, handler_haojia
 from event.engine_timer import EventEngineThreadTimer
 from event.event_type import EVENT_TIMER
 
@@ -7,6 +7,7 @@ from event.event_type import EVENT_TIMER
 def general_event_handler(event):
     if event.type_ == EVENT_TIMER:
         handler_keyword()
+        handler_haojia()
 
 
 if __name__ == "__main__":
