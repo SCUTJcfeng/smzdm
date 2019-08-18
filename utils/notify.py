@@ -25,7 +25,7 @@ def clear_list():
 def send_result(content, skey=FT_QQ_KEY):
     url = 'https://sc.ftqq.com/%s.send' % skey
     data = {
-        'text': '什么值得买',
+        'text': content,
         'desp': content
     }
     resp = requests.get(url, data)
